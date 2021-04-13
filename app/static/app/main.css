@@ -1,3 +1,12 @@
+html {
+    height: 100%;
+}
+body {
+    background-image: url(images/image.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
 .container {
     width: 1024px;
     margin-left: auto;
@@ -9,21 +18,28 @@ header {
     background-color: blue;
 }
 nav {
-    height: 40px;
-    background-color: red;
+    background-color: rgba(255, 255, 255, 0.5);
+    text-align: center;
+    padding-top: 18px;
+    padding-bottom: 18px;
 }
-main {
-    height: 200px;
-    background-color: seagreen;
-    font-size: 50px;
-     font-family:Georgia, 'Times New Roman', Times, serif
-    
-}
+
 footer {
     height: 90px;
     background-color: grey;
 }
-.images {
-    height: 100px;
-    width: 500px;
+
+nav a {
+    text-decoration: none;
+    color:rgb(168, 1, 245);
+    padding-left: 10px;
+    padding-right: 10px;
+}
+main {
+    background-color: bisque;
+    text-align: center;
+    font-size: 30px;
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    padding-top: 20px;    
+    padding-bottom: 20px;
 }
