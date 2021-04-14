@@ -99,3 +99,20 @@ header {
     width: 200px;
     height: 50px;
 }
+
+a.button {
+    padding: 10px 20px;
+    color: black;
+    background-color:rgba(165, 42, 42, 0.452);
+    border-radius: 100px;
+    text-decoration: none;
+    
+}
+a.button:hover {
+    padding: 15px 30px;
+    color: rgb(0, 253, 106);
+    background-color:rgba(255, 10, 10, 0.452);
+    border-radius: 100px;
+    text-decoration: none;
+
+}
