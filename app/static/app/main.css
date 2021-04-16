@@ -108,6 +108,7 @@ a.button:hover {
     border-radius: 100px;
     text-decoration: none;
     box-shadow: 8px 8px 5px rgba(0, 0, 0, 0.336); 
+    transition-duration: 50ms;
 
 }
 a.button:active {
@@ -146,4 +147,18 @@ a.nav-bar-button {
     padding: 10px;
     margin: 10px;
     width: 40%;
+}
+
+.navbutton {
+    display: flex;
+    position: relative;
+
+}
+.dropdown {
+    display: none;
+    position: absolute;
+    z-index: 99;
+}
+.navbutton:hover .dropdown {
+    display: block;
 }
