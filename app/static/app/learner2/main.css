@@ -22,6 +22,9 @@ header {
     top: 50%;
     transform: translateY(-50%);
     margin-left: 5rem;
+    width: 1024px;
+    display: flex;
+    justify-content: space-between;
 }
 .header-menu-top-left a {
     color: black;
@@ -41,4 +44,20 @@ header {
     width: 137px;
     background-color: rgba(2, 73, 180, 0.288);
     border: solid 2px rgba(3, 40, 163, 0.342);
+}
+.date {
+    display: flex;
+}
+.date img {
+    width: 30px;
+    height: 30px;
+}
+.header-menu-top-right {
+    display: inline-block;
+}
+.header-menu-top-left {
+    display: inline-block;
+}
+.header-menu {
+    display: flex;
 }
