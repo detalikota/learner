@@ -13,3 +13,9 @@ def index2(request):
 
 def test2(request):
     return render(request, 'app/learner2/test.html')
+
+def index3(request):
+    return render(request, 'app/learner3/index.html')
+
+def test3(request):
+    return render(request, 'app/learner3/test.html')
