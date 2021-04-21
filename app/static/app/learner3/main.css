@@ -17,12 +17,8 @@ body {
     width: 30%;
 }
 
-.col {
-    color: yellow;
-}
-
-.hidden:hover {
-    display: none;
+.col p::first-line {
+    font-weight: bold;
 }
 
 /* TABLET VIEW */
