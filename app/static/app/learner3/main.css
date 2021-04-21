@@ -17,6 +17,14 @@ body {
     width: 30%;
 }
 
+.col {
+    color: yellow;
+}
+
+.hidden:hover {
+    display: none;
+}
+
 /* TABLET VIEW */
 @media (max-width: 800px) {
 .col {
