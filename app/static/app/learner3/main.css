@@ -55,10 +55,39 @@ nav a {
 .col p::first-line {
     font-weight: bold;
 }
+
+.burger-icon {
+    display: none;
+}
+
 /* TABLET VIEW */
 @media (max-width: 750px) {
     .col {
         width: 45%;
+    }
+    .header-cont {
+        display: block;
+        text-align:center;
+    }
+    nav {
+        display: none;
+    }
+    nav a {
+        display: block;
+        margin-left: 0;
+    }
+    .logo {
+        padding: 30px 0;
+    }
+    .top {
+        position: relative;
+    }
+    .container {
+        padding-top: 0;
+    }
+    .burger-icon {
+        display: block;
+        width: 40px;
     }
 }
 /* MOBILE VIEW */
