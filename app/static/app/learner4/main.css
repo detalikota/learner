@@ -1,0 +1,20 @@
+
+
+.mybox {
+    margin: 20px 20px;
+    background-color: orange;
+    min-height: 200px;
+}
+
+.mybox2 {
+    margin: 20px 20px;
+    background-color: rgb(81, 255, 0);
+    min-height: 200px;
+}
+
+.mybg1 {
+    background-color: grey;
+}
+.drop-shadow {
+    text-shadow: 0px 5px 5px rgb(0, 0, 0);
+}
