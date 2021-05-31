@@ -7,7 +7,6 @@ def index1(request):
 def test1(request):
     return render(request, 'app/learner1/test.html')
 
-
 def index2(request):
     return render(request, 'app/learner2/index.html')
 
@@ -22,3 +21,6 @@ def test3(request):
     
 def index4(request):
     return render(request, 'app/learner4/index.html')
+
+def index5(request):
+    return render(request, 'app/learner5/index.html')
