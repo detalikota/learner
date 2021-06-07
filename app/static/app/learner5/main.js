@@ -4,4 +4,7 @@ function red(){
 function blue(){
     document.body.style.backgroundColor="#98ff98";
 }
-
+function test(a,b,id,mess){
+    var c = ++a;
+    document.getElementById(id).innerHTML=(mess+c);
+}
