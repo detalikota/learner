@@ -16,7 +16,7 @@
     <title>Document</title>
 </head>
 
-<body>
+<body onload="day()">
     <div class="container">
         <div id="red" onmouseover="red()"></div>
         <div id="blue" onmouseover="blue()"></div>
@@ -25,6 +25,12 @@
         <p>The value is: <span id="value">0</span></p>
         <button onclick="test2()">Click to add a number</button>
         <button onclick="test3()">Click to remove a number</button>
+        <p id="dict2">some text</p>
+        <button onclick="testDict()"> change text above</button>
+    </div>
+    <div class="container center">
+        <h1>Good <span id="day"></span>, sir!</h1>
+        <div id="image"></div>
     </div>
     
     <script src="{% static 'app/learner5/main.js' %}"></script>
