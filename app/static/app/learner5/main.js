@@ -6,5 +6,14 @@ function blue(){
 }
 function test(a,b,id,mess){
     var c = ++a;
-    document.getElementById(id).innerHTML=(mess+c);
+    document.getElementById('id').innerHTML=(mess+c);
+}
+var x = 0;
+function test2(){
+    x += 1;
+    document.getElementById('value').innerHTML=(x);
+}
+function test3(){
+    x -= 1;
+    document.getElementById('value').innerHTML=(x);
 }
