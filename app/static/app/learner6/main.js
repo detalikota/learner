@@ -1,23 +1,44 @@
 
-function col(){
-    var randomCol = Math.floor(Math.random() * 9);
-    return randomCol
-}
-function figure(){
-    var figures = ["square","triangle","circle"];
-    var randomFigure = Math.floor(Math.random() * 3);
-    var figure = figures[randomFigure];
-    return figure;
+var randomCol = Math.floor(Math.random() * 9);
+var figures = ["square","triangle","circle"];
+var randomFigure = Math.floor(Math.random() * 3);
+var figure = figures[randomFigure];
+var colors = ["black","yellow","grey"];
+var randomColor = Math.floor(Math.random() * 3);
+var color = colors[randomColor];
+function appear(){
+    document.getElementById(randomCol).classList.add(figure);
 }
 
-function colors(){
-    var colors = ["black","yellow","grey"];
-    var randomColor = Math.floor(Math.random() * 3);
-    var color = colors[randomColor];
-    return color;
+var timerVar = setInterval(countTimer, 1000);
+var totalSeconds = 0;
+setTimeout(appear, 1000);
+function countTimer() {
+           ++totalSeconds;
+           var hour = Math.floor(totalSeconds /3600);
+           var minute = Math.floor((totalSeconds - hour*3600)/60);
+           var seconds = totalSeconds - (hour*3600 + minute*60);
+           if(hour < 10)
+             hour = "0"+hour;
+           if(minute < 10)
+             minute = "0"+minute;
+           if(seconds < 10)
+             seconds = "0"+seconds;
+           document.getElementById("timer").innerHTML = hour + ":" + minute + ":" + seconds;
+           return document.getElementById("timer").innerHTML = hour + ":" + minute + ":" + seconds;
+        }
+function stopTimer(){
+    document.getElementById("result").innerHTML = countTimer();
+    setTimeout(location.reload.bind(location), 3000);
 }
-document.getElementById(col()).classList.add(figure());
+if (figure=="triangle"){
+    document.getElementById(randomCol).style.borderBottomColor=color;
+}
+else {
+    document.getElementById(randomCol).style.background=color;
+}
 
+/*
 var figures2 = ["square","triangle","circle"];
 var x = document.getElementsByClassName(figures2);
 var i;
@@ -29,6 +50,7 @@ for (i = 0; i < x.length; i++) {
         x[i].style.background = colors();
     }
 }
+*/
 
 
 /* function red(){
