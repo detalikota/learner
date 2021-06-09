@@ -1,4 +1,37 @@
-function red(){
+
+function col(){
+    var randomCol = Math.floor(Math.random() * 9);
+    return randomCol
+}
+function figure(){
+    var figures = ["square","triangle","circle"];
+    var randomFigure = Math.floor(Math.random() * 3);
+    var figure = figures[randomFigure];
+    return figure;
+}
+
+function colors(){
+    var colors = ["black","yellow","grey"];
+    var randomColor = Math.floor(Math.random() * 3);
+    var color = colors[randomColor];
+    return color;
+}
+document.getElementById(col()).classList.add(figure());
+
+var figures2 = ["square","triangle","circle"];
+var x = document.getElementsByClassName(figures2);
+var i;
+for (i = 0; i < x.length; i++) {
+    if (x[i] == "triangle") {
+        x[i].style.borderBottomColor = colors();
+    }
+    else {
+        x[i].style.background = colors();
+    }
+}
+
+
+/* function red(){
     document.body.style.backgroundColor="#18caf2";
 }
 function blue(){
@@ -96,3 +129,4 @@ function tip() {
     var result = ((tipMoney/100)*tipService)/tipPeople;
     document.getElementById("tipAmount").innerHTML=(result);
 }
+*/

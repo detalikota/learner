@@ -24,3 +24,5 @@ def index4(request):
 
 def index5(request):
     return render(request, 'app/learner5/index.html')
+def index6(request):
+    return render(request, 'app/learner6/index.html')
