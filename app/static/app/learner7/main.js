@@ -1,16 +1,19 @@
 window.onload = appear();
+
 var start;
 var clicked;
 var reactionTime;
-var numbers = [1000,2000,3000,4000];
-var randomNumber = Math.floor(Math.random() * 3);
-var number = numbers[randomNumber];
+
+
 function disappear(){
     document.getElementById("box").style.display='none';
     clicked = Date.now();
     reactionTime = (clicked-start)/1000;
-    setTimeout(appear,number);
-    alert('your reaction time is'+ reactionTime);
+    document.getElementById('result').innerHTML=(reactionTime);
+    var numbers = [1000,2000,3000,4000];
+    delay = numbers[Math.floor(Math.random() * numbers.length)];
+    setTimeout(appear, delay);
+
 } 
 function appear(){
     var randomTop = Math.random()*400;
@@ -18,6 +21,7 @@ function appear(){
     var randomHeight = (Math.random()*200)+50;
     var randomWidth = (Math.random()*200)+50;
     var randomCurve = Math.random();
+    var randomColor = "#" + ((1<<24)*Math.random() | 0).toString(16);
     if (randomCurve < 0.5) {
         document.getElementById('box').style.borderRadius=('500px');
     }
@@ -26,6 +30,7 @@ function appear(){
     document.getElementById('box').style.top=(randomTop+'px');
     document.getElementById('box').style.left=(randomLeft+'px');
     document.getElementById('box').style.display='block';
+    document.getElementById('box').style.backgroundColor=randomColor;
     start = Date.now();
 }
 /* document.getElementById("result").innerHTML=(disappear()); */

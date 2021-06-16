@@ -1,0 +1,17 @@
+$('.test').animate({
+    'height':'500px',
+    'width':'500px'
+},2000);
+$('.test').click(function(){
+    $(this).animate({
+        'height':'50px',
+        'width':'50px',
+    },2000)
+});
+$('#test').css({
+    'font-size':'50px'
+});
+$('#test').html('yeeaahaa!');
+$('#test').mouseleave(function(){
+    $('#test').html('wow!!!')
+});

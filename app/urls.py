@@ -1,5 +1,5 @@
 from django.urls import path
-from .views import index1, test1, index2, test2, index3, test3, index4, index5, index6, index7
+from .views import index1, test1, index2, test2, index3, test3, index4, index5, index6, index7, index8
 app_name = 'app'
 urlpatterns = [
     path('learner1', index1, name='learner1-index'),
@@ -12,4 +12,5 @@ urlpatterns = [
     path('learner5', index5, name='learner5-index'),
     path('learner6', index6, name='learner6-index'),
     path('learner7', index7, name='learner7-index'),
+    path('learner8', index8, name='learner8-index'),
 ]
